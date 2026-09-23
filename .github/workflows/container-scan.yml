@@ -34,6 +34,7 @@ jobs:
           image-ref: container-scanning-demo:${{ github.sha }}
           version: 'latest'
           severity: HIGH,CRITICAL
+          limit-severities-for-sarif: true
           ignore-unfixed: true
           exit-code: '1'
           format: sarif
